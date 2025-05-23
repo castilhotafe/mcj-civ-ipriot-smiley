@@ -25,6 +25,7 @@ class Smiley:
             O, Y, Y, Y, Y, Y, Y, O,
         ]
 
+
     def dim_display(self, dimmed=True):
         """
         Set the SenseHat's light intensity to low (True) or high (False)
@@ -38,8 +39,3 @@ class Smiley:
         """
         self.sense_hat.set_pixels(self.pixels)
 
-smiley = Smiley()
-
-
-tipo = type(smiley.pixels)
-print(tipo)

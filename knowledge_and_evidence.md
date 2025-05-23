@@ -80,11 +80,15 @@ python3 main.py
 
 2. Fill in (`_`) the following table based on the code in `smiley.py`:
 
-   | Object                   | Type                    |
-   | ------------             | ----------------------- |
-   | self.pixels              | _                       |
-   | A member of self.pixels  | _                       |
-   | self                     | _                       |
+   | Object                   | Type   |
+   | ------------             |--------|
+   | self.pixels              | List   |
+   | A member of self.pixels  | Tuple  |
+   | self                     | Object |
+
+>>REFERENCE
+> Python Software Foundation. (2024). Built-in types. In Python 3.13.3 
+> documentation. https://docs.python.org/3/library/stdtypes.html
 
 3. Examine the code for `smiley.py`, `sad.py`, and `happy.py`. Give an example of each of the following control structures using an example from **each** of these files. Include the first line and the line range:
 
@@ -93,6 +97,8 @@ python3 main.py
    |  sequence    |  _         | _           | _           |
    |  selection   | _          | _           | _           |
    |  iteration   | _          | _           | _           |
+
+
 
 4. Though everything in Python is an object, it is sometimes said to have four "primitive" types. Examining the three files `smiley.py`, `sad.py`, and `happy.py`, identify which of the following types are used in any of these files, and give an example of each (use an example from the code, if applicable, otherwise provide an example of your own):
 
