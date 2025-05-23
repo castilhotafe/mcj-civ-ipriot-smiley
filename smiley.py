@@ -37,3 +37,9 @@ class Smiley:
         Show the smiley on the screen.
         """
         self.sense_hat.set_pixels(self.pixels)
+
+smiley = Smiley()
+
+
+tipo = type(smiley.pixels)
+print(tipo)

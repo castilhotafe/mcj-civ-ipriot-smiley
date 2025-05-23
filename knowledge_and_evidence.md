@@ -53,7 +53,7 @@ Address the following tasks and questions based on the code provided in this rep
 3. Run the project locally by executing the `main.py` file
 4. Evidence this by providing screenshots of the project directory structure and the output of the `main.py` file
 
-![Local Execution (INSERT YOUR SCREENSHOT)](screenshots/CREATE_A_SCREENSHOT_OF_YOUR_local_setup.png)
+![output-mainpy.png](screenshots%2Foutput-mainpy.png)
 
 If you are running on a Raspberry Pi, you can use the following command to run the project and then screenshot the result:
 
@@ -68,11 +68,15 @@ python3 main.py
 
 1. Examine the code for the `smiley.py` file and provide  an example of a variable of each of the following types and their corresponding values (`_` should be replaced with the appropriate values):
 
-   | Type                    | name       | value          |
-   | ----------              | ---------- | -------------- |
-   | built-in primitive type | _          |  _             |
-   | built-in composite type | _          |  _             |
-   | user-defined type       | _          |  _             |
+   | Type                    | name   | value                       |
+   | ----------              |--------|-----------------------------|
+   | built-in primitive type | dimmed | True                        |
+   | built-in composite type | pixels | (0, 0, 0), (255, 255, 0)... |
+   | user-defined type       | Smiley | Class                       |
+
+>>REFERENCE 
+> Python Software Foundation. (2024). Built-in types. Python 3.13.3 documentation. https://docs.python.org/3/library/stdtypes.html
+
 
 2. Fill in (`_`) the following table based on the code in `smiley.py`:
 
