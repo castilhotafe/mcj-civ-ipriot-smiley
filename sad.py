@@ -1,4 +1,5 @@
 from smiley import Smiley
+import time
 
 
 class Sad(Smiley):
@@ -22,9 +23,22 @@ class Sad(Smiley):
         :param wide_open: Render eyes wide open or shut
         """
         eyes = [10, 13, 18, 21]
+        color = self.BLANK if wide_open else self.complexion()
         for pixel in eyes:
-            if wide_open:
-                eyes = self.BLANK
-            else:
-                eyes = self.YELLOW
-            self.pixels[pixel] = eyes
+            self.pixels[pixel] = color
+
+    def blink(self, delay=0.25):
+        """
+        Blinks the eyes of the sad smiley twice.
+
+        :param delay: Delay between closing and opening the eyes
+        """
+        for blink in range(2):
+            self.draw_eyes(wide_open=False)
+            self.show()
+            time.sleep(delay)
+
+            self.draw_eyes(wide_open=True)
+            self.show()
+            time.sleep(delay)
+
