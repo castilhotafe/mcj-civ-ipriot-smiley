@@ -92,45 +92,62 @@ python3 main.py
 
 3. Examine the code for `smiley.py`, `sad.py`, and `happy.py`. Give an example of each of the following control structures using an example from **each** of these files. Include the first line and the line range:
 
-   | Control Flow | File       | First line  | Line range  |
-   | ------------ | ---------- | ----------- | ----------- |
-   |  sequence    |  _         | _           | _           |
-   |  selection   | _          | _           | _           |
-   |  iteration   | _          | _           | _           |
+   | Control Flow | File      | First line | Line range |
+   | ------------ |-----------|------------|------------|
+   |  sequence    | smiley.py | 13         | 21         |
+   |  selection   | happy.py  | 31         | 31         |
+   |  iteration   | sad.py    | 15         | 17         |
 
 
 
 4. Though everything in Python is an object, it is sometimes said to have four "primitive" types. Examining the three files `smiley.py`, `sad.py`, and `happy.py`, identify which of the following types are used in any of these files, and give an example of each (use an example from the code, if applicable, otherwise provide an example of your own):
 
-   | Type                    | Used? | Example |
-   | ----------------------- | ----- | --------|
-   | int                     | _     | _          |
-   | float                   | _     | _          |
-   | str                     | _     | _          |
-   | bool                    | _     | _          |
+   | Type                    | Used?     | Example                 |
+   | ----------------------- |-----------|-------------------------|
+   | int                     | smiley.py | 255 (inside the tuples) |
+   | float                   | happy.py  | delay                   |
+   | str                     | sad.py    | "draws" (in doc string) |
+   | bool                    | happy.py  | wide_open               |
 
 5. Examining `smiley.py`, provide an example of a class variable and an instance variable (attribute). Explain **why** one is defined as a class variable and the other as an instance variable.
 
-> Your answer here
->
+> YELLOW is a class variable while self.pixels is a instance variable
+> YELLOW is a class variable because it is shared by all Smiley objects,
+> while every object can have its own set of pixels.
 
 6. Examine `happy.py`, and identify the constructor (initializer) for the `Happy` class:
    1. What is the purpose of a constructor (in general) and this one (in particular)?
 
-   > Your answer here
+> A constructor is a special method that runs when an object is created.
+>In general, it sets up the object with initial values or actions.
+> Specifically In happy.py, the constructor (__init__) calls the parent 
+> constructor using super().__init__() to set the background for the happy 
+> face.
    >
 
    2. What statement(s) does it execute (consider the `super` call), and what is the result?
 
-   > Your answer here
-   >
+   >super().__init__() creates the Sense Hat object and sets the pixels for 
+   > the smiley background using different colors for each pixel, 
+   > based on the class’s properties.
 
 ### 2.3. Code style
 
 1. What code style is used in the code? Is it likely to be the same as the code style used in the SenseHat? Give to reasons as to why/why not:
 
-> Your answer here
->
+> The code uses the PEP8 style, and It's likely to be the same used in the 
+> SenseHat
+> Frist because it's a public library and most public libraries follow this 
+> style
+> Second to stay consistent and readable
+>>>REFERENCE
+>van Rossum, G., Warsaw, B., & Coghlan, N. (2001). PEP 8 – Style Guide for 
+> Python Code. Python Software Foundation. Retrieved May 23, 2025, from 
+>https://peps.python.org/pep-0008/
+> 
+> Answered translated from portuguese:
+> O código utiliza o estilo PEP8, que é o padrão para escrever códigos Python de forma limpa e organizada.
+É provável que a biblioteca SenseHat também siga o PEP8, pois é uma biblioteca oficial do Python e a maioria das bibliotecas públicas segue esse estilo para manter consistência e legibilidade.
 
 2. List three aspects of this convention you see applied in the code.
 
@@ -139,9 +156,12 @@ python3 main.py
 
 3. Give two examples of organizational documentation in the code.
 
-> Your answer here
->
-
+> 1 - Indentation with 4 spaces is used in method and loop blocks
+> 
+> 2 - Variable and method names use snake case, like draw_mouth and self.pixel
+> 
+>3 - Spaces are used around assignment and comparison operators, like in self.sense_hat = SenseHat()
+> 
 ### 2.4. Identifying and understanding classes
 
 > Note: Ignore the `sense_hat.py` file when answering the questions below
