@@ -451,8 +451,7 @@ Each smiley can have its own color by changing the method, not the whole code.
   3. **Rationale for `my_complexion`:** Using a distinct instance variable like `my_complexion` avoids potential conflicts with the method parameter names and clarifies that it is an attribute specific to the object.
 
   4. **Bulk rename:** We want to update our grid to use the value of complexion, but we have so many `Y`'s in the grid. Use your IDE's refactoring tool to rename all instances of the **symbol** `Y` to `X`. Where `X` is the value of the `complexion` variable. Include a screenshot evidencing you have found the correct refactor tool and the changes made.
-
-  ![Bulk Rename](screenshots/bulk_rename.png)
+![Screenshot 2025-06-02 at 12.55.38 am.png](screenshots/Screenshot%202025-06-02%20at%2012.55.38%E2%80%AFam.png)
 
   5. **Update the `complexion` method:** Adjust this method to return `self.my_complexion`, ensuring that whatever color is assigned during instantiation is what the smiley displays.
 
